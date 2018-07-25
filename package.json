@@ -1,7 +1,7 @@
 {
   "name": "fabric-starter",
   "version": "0.1.0",
-  "main": "src/index.tsx",
+  "main": "build/dist/index.js",
   "dependencies": {
     "office-ui-fabric-react": "^6.36.0",
     "react": "^16.4.1",
