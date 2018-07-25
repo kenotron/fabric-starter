@@ -1,7 +1,6 @@
 {
-  "name": "my-app",
+  "name": "fabric-starter",
   "version": "0.1.0",
-  "private": true,
   "main": "src/index.tsx",
   "dependencies": {
     "office-ui-fabric-react": "^6.36.0",
