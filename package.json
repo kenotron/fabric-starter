@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "main": "build/dist/index.js",
   "dependencies": {
+    "@uifabric/experiments": "^6.22.4",
     "office-ui-fabric-react": "^6.45.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",

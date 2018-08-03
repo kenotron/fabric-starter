@@ -20,6 +20,44 @@
   version "1.7.68"
   resolved "https://registry.yarnpkg.com/@microsoft/load-themed-styles/-/load-themed-styles-1.7.68.tgz#d0b79c5203ff4b2dd278750dc5743cae823bd2fe"
 
+"@types/d3-array@1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@types/d3-array/-/d3-array-1.2.1.tgz#e489605208d46a1c9d980d2e5772fa9c75d9ec65"
+
+"@types/d3-axis@1.0.10":
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/@types/d3-axis/-/d3-axis-1.0.10.tgz#41d6b3ea9032f9531ec0d71d83bcf49294511210"
+  dependencies:
+    "@types/d3-selection" "*"
+
+"@types/d3-path@*":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@types/d3-path/-/d3-path-1.0.7.tgz#a0736fceed688a695f48265a82ff7a3369414b81"
+
+"@types/d3-scale@2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@types/d3-scale/-/d3-scale-2.0.0.tgz#d40f2ff137f4fe9b13b45c5a8e14f39edd498dcf"
+  dependencies:
+    "@types/d3-time" "*"
+
+"@types/d3-selection@*":
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/@types/d3-selection/-/d3-selection-1.3.1.tgz#c6227f4e39d429cc429ce3882fd533facc7f014c"
+
+"@types/d3-selection@1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@types/d3-selection/-/d3-selection-1.3.0.tgz#acede3d22c18ec085cc401d4fdab9f040e1a73c7"
+
+"@types/d3-shape@^1.2.3":
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/@types/d3-shape/-/d3-shape-1.2.3.tgz#cadc9f93a626db9190f306048a650df4ffa4e500"
+  dependencies:
+    "@types/d3-path" "*"
+
+"@types/d3-time@*":
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/@types/d3-time/-/d3-time-1.0.8.tgz#6c083127b330b3c2fc65cd0f3a6e9cbd9607b28c"
+
 "@types/jest@^23.1.6":
   version "23.1.6"
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-23.1.6.tgz#11c88f738f5b57d1a9dd4970c576a6639b8f0f37"
@@ -51,6 +89,52 @@
   dependencies:
     csstype "^2.2.0"
 
+"@uifabric/charting@^0.12.0":
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/@uifabric/charting/-/charting-0.12.0.tgz#cae2865f820724c417560b4f6f2861b1da2ccd2a"
+  dependencies:
+    "@microsoft/load-themed-styles" "^1.7.13"
+    "@types/d3-array" "1.2.1"
+    "@types/d3-axis" "1.0.10"
+    "@types/d3-scale" "2.0.0"
+    "@types/d3-selection" "1.3.0"
+    "@types/d3-shape" "^1.2.3"
+    "@uifabric/icons" ">=6.0.2 <7.0.0"
+    d3-array "1.2.1"
+    d3-axis "1.0.8"
+    d3-scale "2.0.0"
+    d3-selection "1.3.0"
+    d3-shape "^1.2.0"
+    office-ui-fabric-react ">=6.43.0 <7.0.0"
+    prop-types "^15.5.10"
+    tslib "^1.7.1"
+
+"@uifabric/experiments@^6.22.4":
+  version "6.22.4"
+  resolved "https://registry.yarnpkg.com/@uifabric/experiments/-/experiments-6.22.4.tgz#08369f537d9a36da05fbeecb1470694076a3554d"
+  dependencies:
+    "@microsoft/load-themed-styles" "^1.7.13"
+    "@uifabric/charting" "^0.12.0"
+    "@uifabric/file-type-icons" ">=6.0.1 <7.0.0"
+    "@uifabric/foundation" ">=0.2.2 <1.0.0"
+    "@uifabric/icons" ">=6.0.2 <7.0.0"
+    deep-assign "^2.0.0"
+    office-ui-fabric-react ">=6.45.0 <7.0.0"
+    tslib "^1.7.1"
+
+"@uifabric/file-type-icons@>=6.0.1 <7.0.0":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/@uifabric/file-type-icons/-/file-type-icons-6.0.1.tgz#d9dd48effa19bdd08872847d1b93d83389d9444f"
+  dependencies:
+    "@uifabric/styling" ">=6.5.0 <7.0.0"
+    tslib "^1.7.1"
+
+"@uifabric/foundation@>=0.2.2 <1.0.0":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@uifabric/foundation/-/foundation-0.2.2.tgz#2cf9fe470aba19eaee1e1a824b68fd8bca696393"
+  dependencies:
+    tslib "^1.7.1"
+
 "@uifabric/icons@>=6.0.2 <7.0.0":
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/@uifabric/icons/-/icons-6.0.2.tgz#743ed18028285e2c6498b3f15b2195581255cafb"
@@ -70,7 +154,7 @@
   dependencies:
     tslib "^1.7.1"
 
-"@uifabric/styling@>=6.14.0 <7.0.0":
+"@uifabric/styling@>=6.14.0 <7.0.0", "@uifabric/styling@>=6.5.0 <7.0.0":
   version "6.14.0"
   resolved "https://registry.yarnpkg.com/@uifabric/styling/-/styling-6.14.0.tgz#72e6f7fb0c456756ece4d4b3fc6c42d1d847190c"
   dependencies:
@@ -1959,6 +2043,67 @@ cyclist@~0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/cyclist/-/cyclist-0.2.2.tgz#1b33792e11e914a2fd6d6ed6447464444e5fa640"
 
+d3-array@1.2.1, d3-array@^1.2.0:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/d3-array/-/d3-array-1.2.1.tgz#d1ca33de2f6ac31efadb8e050a021d7e2396d5dc"
+
+d3-axis@1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/d3-axis/-/d3-axis-1.0.8.tgz#31a705a0b535e65759de14173a31933137f18efa"
+
+d3-collection@1:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/d3-collection/-/d3-collection-1.0.4.tgz#342dfd12837c90974f33f1cc0a785aea570dcdc2"
+
+d3-color@1:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/d3-color/-/d3-color-1.2.0.tgz#d1ea19db5859c86854586276ec892cf93148459a"
+
+d3-format@1:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/d3-format/-/d3-format-1.3.0.tgz#a3ac44269a2011cdb87c7b5693040c18cddfff11"
+
+d3-interpolate@1:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/d3-interpolate/-/d3-interpolate-1.2.0.tgz#40d81bd8e959ff021c5ea7545bc79b8d22331c41"
+  dependencies:
+    d3-color "1"
+
+d3-path@1:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/d3-path/-/d3-path-1.0.5.tgz#241eb1849bd9e9e8021c0d0a799f8a0e8e441764"
+
+d3-scale@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/d3-scale/-/d3-scale-2.0.0.tgz#fd8ac78381bc2ed741d8c71770437a5e0549a5a5"
+  dependencies:
+    d3-array "^1.2.0"
+    d3-collection "1"
+    d3-format "1"
+    d3-interpolate "1"
+    d3-time "1"
+    d3-time-format "2"
+
+d3-selection@1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/d3-selection/-/d3-selection-1.3.0.tgz#d53772382d3dc4f7507bfb28bcd2d6aed2a0ad6d"
+
+d3-shape@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/d3-shape/-/d3-shape-1.2.0.tgz#45d01538f064bafd05ea3d6d2cb748fd8c41f777"
+  dependencies:
+    d3-path "1"
+
+d3-time-format@2:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/d3-time-format/-/d3-time-format-2.1.1.tgz#85b7cdfbc9ffca187f14d3c456ffda268081bb31"
+  dependencies:
+    d3-time "1"
+
+d3-time@1:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/d3-time/-/d3-time-1.0.8.tgz#dbd2d6007bf416fe67a76d17947b784bffea1e84"
+
 d@1:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/d/-/d-1.0.0.tgz#754bb5bfe55451da69a58b94d45f4c5b0462d58f"
@@ -2002,6 +2147,12 @@ decamelize@^1.0.0, decamelize@^1.1.1, decamelize@^1.1.2:
 decode-uri-component@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
+
+deep-assign@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/deep-assign/-/deep-assign-2.0.0.tgz#ebe06b1f07f08dae597620e3dd1622f371a1c572"
+  dependencies:
+    is-obj "^1.0.0"
 
 deep-equal@^1.0.1:
   version "1.0.1"
@@ -4987,7 +5138,7 @@ obuf@^1.0.0, obuf@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/obuf/-/obuf-1.1.1.tgz#104124b6c602c6796881a042541d36db43a5264e"
 
-office-ui-fabric-react@^6.45.0:
+"office-ui-fabric-react@>=6.43.0 <7.0.0", "office-ui-fabric-react@>=6.45.0 <7.0.0", office-ui-fabric-react@^6.45.0:
   version "6.45.0"
   resolved "https://registry.yarnpkg.com/office-ui-fabric-react/-/office-ui-fabric-react-6.45.0.tgz#1e2741a2e3d62282ef783e88d2694ed384e8b21f"
   dependencies:

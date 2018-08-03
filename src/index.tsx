@@ -1,12 +1,9 @@
 import React from "react";
 import { render } from "react-dom";
-
-import { PrimaryButton } from "office-ui-fabric-react";
+import { BuildThisUI } from "./BuildThisUI";
 
 const App = () => (
-  <div>
-    <PrimaryButton>Start here!</PrimaryButton>
-  </div>
+  <BuildThisUI />
 );
 
 render(<App />, document.getElementById("root"));
