@@ -28,9 +28,15 @@
   version "9.4.6"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-9.4.6.tgz#d8176d864ee48753d053783e4e463aec86b8d82e"
 
-"@types/prop-types@^15.5.3":
+"@types/prop-types@15.5.3", "@types/prop-types@^15.5.3":
   version "15.5.3"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.5.3.tgz#bef071852dca2a2dbb65fecdb7bfb30cedae2de2"
+
+"@types/prop-types@^15.5.2":
+  version "15.5.4"
+  resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.5.4.tgz#9e6199bad131786e24c2baa2a82705a02139fbf8"
+  dependencies:
+    "@types/react" "*"
 
 "@types/react-dom@^16.0.6":
   version "16.0.6"
@@ -58,13 +64,37 @@
   dependencies:
     tslib "^1.7.1"
 
-"@uifabric/styling@>=6.3.0 <7.0.0", "@uifabric/styling@>=6.8.0 <7.0.0":
+"@uifabric/merge-styles@>=6.6.0 <7.0.0", "@uifabric/merge-styles@>=6.7.0 <7.0.0":
+  version "6.7.0"
+  resolved "https://registry.yarnpkg.com/@uifabric/merge-styles/-/merge-styles-6.7.0.tgz#35ced1e204279998d358332ada70fd3a2792692d"
+  dependencies:
+    tslib "^1.7.1"
+
+"@uifabric/styling@>=6.14.0 <7.0.0":
+  version "6.14.0"
+  resolved "https://registry.yarnpkg.com/@uifabric/styling/-/styling-6.14.0.tgz#72e6f7fb0c456756ece4d4b3fc6c42d1d847190c"
+  dependencies:
+    "@microsoft/load-themed-styles" "^1.7.13"
+    "@uifabric/merge-styles" ">=6.7.0 <7.0.0"
+    "@uifabric/utilities" ">=6.12.1 <7.0.0"
+    tslib "^1.7.1"
+
+"@uifabric/styling@>=6.3.0 <7.0.0":
   version "6.8.0"
   resolved "https://registry.yarnpkg.com/@uifabric/styling/-/styling-6.8.0.tgz#d3ffbeffba75f5173e42d9a40ed7be7c297a1ca3"
   dependencies:
     "@microsoft/load-themed-styles" "^1.7.13"
     "@uifabric/merge-styles" ">=6.4.0 <7.0.0"
     "@uifabric/utilities" ">=6.9.0 <7.0.0"
+    tslib "^1.7.1"
+
+"@uifabric/utilities@>=6.12.1 <7.0.0":
+  version "6.12.1"
+  resolved "https://registry.yarnpkg.com/@uifabric/utilities/-/utilities-6.12.1.tgz#e868d6cac5cea1b769219309acf8aff36e81cb1c"
+  dependencies:
+    "@types/prop-types" "^15.5.2"
+    "@uifabric/merge-styles" ">=6.6.0 <7.0.0"
+    prop-types "^15.5.10"
     tslib "^1.7.1"
 
 "@uifabric/utilities@>=6.9.0 <7.0.0":
@@ -4957,15 +4987,16 @@ obuf@^1.0.0, obuf@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/obuf/-/obuf-1.1.1.tgz#104124b6c602c6796881a042541d36db43a5264e"
 
-office-ui-fabric-react@^6.36.0:
-  version "6.36.0"
-  resolved "https://registry.yarnpkg.com/office-ui-fabric-react/-/office-ui-fabric-react-6.36.0.tgz#013cfd946eabe68647bfe8e3a7be24cb0a78b646"
+office-ui-fabric-react@^6.45.0:
+  version "6.45.0"
+  resolved "https://registry.yarnpkg.com/office-ui-fabric-react/-/office-ui-fabric-react-6.45.0.tgz#1e2741a2e3d62282ef783e88d2694ed384e8b21f"
   dependencies:
     "@microsoft/load-themed-styles" "^1.7.13"
+    "@types/prop-types" "15.5.3"
     "@uifabric/icons" ">=6.0.2 <7.0.0"
-    "@uifabric/merge-styles" ">=6.4.0 <7.0.0"
-    "@uifabric/styling" ">=6.8.0 <7.0.0"
-    "@uifabric/utilities" ">=6.9.0 <7.0.0"
+    "@uifabric/merge-styles" ">=6.7.0 <7.0.0"
+    "@uifabric/styling" ">=6.14.0 <7.0.0"
+    "@uifabric/utilities" ">=6.12.1 <7.0.0"
     prop-types "^15.5.10"
     tslib "^1.7.1"
 
