@@ -4,6 +4,9 @@
   "main": "build/dist/index.js",
   "dependencies": {
     "@uifabric/experiments": "^6.22.4",
+    "@uifabric/foundation": "^0.2.3",
+    "@uifabric/styling": ">=6.14.0 <7.0.0",
+    "@uifabric/utilities": ">=6.12.1 <7.0.0",
     "office-ui-fabric-react": "^6.45.0",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",

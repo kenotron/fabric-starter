@@ -135,6 +135,12 @@
   dependencies:
     tslib "^1.7.1"
 
+"@uifabric/foundation@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@uifabric/foundation/-/foundation-0.2.3.tgz#dc1508cc4277a7970f52e6255e85003f7bf86183"
+  dependencies:
+    tslib "^1.7.1"
+
 "@uifabric/icons@>=6.0.2 <7.0.0":
   version "6.0.2"
   resolved "https://registry.yarnpkg.com/@uifabric/icons/-/icons-6.0.2.tgz#743ed18028285e2c6498b3f15b2195581255cafb"
