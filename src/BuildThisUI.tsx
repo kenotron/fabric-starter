@@ -1,10 +1,10 @@
 import React from "react";
-import { Toggle as ToggleOld } from 'office-ui-fabric-react';
-import { Stack, Text } from '@uifabric/experiments';
-import { createTheme, DefaultPalette, ITheme } from '@uifabric/styling';
-import { Customizer } from '@uifabric/utilities';
-import { Toggle as ToggleNew } from './Toggle/Toggle';
-import { IToggleStyleProps, IToggleStyles } from './Toggle/Toggle.types';
+import { Toggle as ToggleOld } from "office-ui-fabric-react";
+import { Text, VerticalStack } from "@uifabric/experiments";
+import { createTheme, DefaultPalette, ITheme } from "@uifabric/styling";
+import { Customizer } from "@uifabric/utilities";
+import { Toggle as ToggleNew } from "./Toggle/Toggle";
+import { IToggleStyleProps, IToggleStyles } from "./Toggle/Toggle.types";
 
 function getCustomizerStyles(props: IToggleStyleProps): Partial<IToggleStyles> {
   const { theme } = props;
@@ -25,9 +25,9 @@ export class BuildThisUI extends React.Component<any, any> {
   render() {
     return (
       <>
-        <Stack>
-          <Text>check out these components yo</Text>
-        </Stack>
+        <VerticalStack>
+          <Text variant="default">Check out these components, yo!</Text>
+        </VerticalStack>
         <ToggleOld
           label="Old"
           onText="On"
@@ -40,13 +40,15 @@ export class BuildThisUI extends React.Component<any, any> {
           offText="Off"
           defaultChecked={true}
         />
-        <Customizer scopedSettings={{ Toggle: { styles: getCustomizerStyles }}}>
+        <Customizer
+          scopedSettings={{ Toggle: { styles: getCustomizerStyles } }}
+        >
           <ToggleNew
             label="Customizer Styles"
             onText="On"
             offText="Off"
             defaultChecked={true}
-            />
+          />
         </Customizer>
         <Customizer settings={{ theme: csCustomizerTheme }}>
           <ToggleNew
@@ -54,7 +56,7 @@ export class BuildThisUI extends React.Component<any, any> {
             onText="On"
             offText="Off"
             defaultChecked={true}
-            />
+          />
         </Customizer>
       </>
     );
