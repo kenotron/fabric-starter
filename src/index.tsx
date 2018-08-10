@@ -4,12 +4,14 @@ import { BuildThisUI } from "./BuildThisUI";
 import { initializeIcons } from "@uifabric/icons";
 import { createTheme } from "@uifabric/styling";
 import { Customizer } from "../node_modules/@uifabric/utilities";
+import "./index.css";
 
 initializeIcons();
 
 const App = () => {
-  const theme = createTheme({});
-  return <Customizer settings={{theme}}><BuildThisUI /></Customizer>
+  return (
+    <BuildThisUI />
+  );
 };
 
 render(<App />, document.getElementById("root"));
