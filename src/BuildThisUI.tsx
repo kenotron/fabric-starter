@@ -1,66 +1,64 @@
 import React from "react";
-import { VerticalStack, HorizontalStack } from "@uifabric/experiments";
-import { Chart } from "./Chart";
-import {
-  OverflowButtonType,
-  Facepile,
-  mergeStyleSets
-} from "office-ui-fabric-react";
-import { facepilePersonas } from "./facepilePersonas";
-import { Text } from "./Text";
+import { Toggle as ToggleOld } from "office-ui-fabric-react";
+import { Text, VerticalStack } from "@uifabric/experiments";
+import { createTheme, DefaultPalette, ITheme } from "@uifabric/styling";
+import { Customizer } from "@uifabric/utilities";
+import { Toggle as ToggleNew } from "./Toggle/Toggle";
+import { IToggleStyleProps, IToggleStyles } from "./Toggle/Toggle.types";
+
+function getCustomizerStyles(props: IToggleStyleProps): Partial<IToggleStyles> {
+  const { theme } = props;
+  return {
+    text: { color: theme.semanticColors.link },
+    pill: { background: theme.semanticColors.errorBackground }
+  };
+}
+
+const csCustomizerTheme: ITheme = createTheme({
+  semanticColors: {
+    inputBackgroundChecked: DefaultPalette.redDark,
+    inputForegroundChecked: DefaultPalette.red
+  }
+});
 
 export class BuildThisUI extends React.Component<any, any> {
   render() {
-    const classNames = getClassNames();
-
     return (
-      <VerticalStack className={classNames.root}>
-        <Text className={classNames.header}>Info</Text>
-
+      <>
         <VerticalStack>
-          <Text>Collab Color Scheme</Text>
-          <HorizontalStack>
-            <Text>OneDrive</Text>
-            <Text>OneDrive</Text>
-            <Text>OneDrive</Text>
-          </HorizontalStack>
-          <Text>Managed by Word (corp.microsoft.com)</Text>
+          <Text variant="default">Check out these components, yo!</Text>
         </VerticalStack>
-
-        <Text>Document View</Text>
-        <VerticalStack verticalAlign="space-between">
-          <HorizontalStack>
-            <Text>1376 totol</Text>
-            <Text>96 total</Text>
-          </HorizontalStack>
-
-          <HorizontalStack>Last 7 days</HorizontalStack>
-        </VerticalStack>
-
-        <Chart />
-
-        <VerticalStack>
-          <Text>Consider Sharing with</Text>
-          <Facepile
-            personas={facepilePersonas}
-            maxDisplayablePersonas={5}
-            overflowButtonType={OverflowButtonType.downArrow}
-            overflowButtonProps={{}}
+        <ToggleOld
+          label="Old"
+          onText="On"
+          offText="Off"
+          defaultChecked={true}
+        />
+        <ToggleNew
+          label="New (State + View)"
+          onText="On"
+          offText="Off"
+          defaultChecked={true}
+        />
+        <Customizer
+          scopedSettings={{ Toggle: { styles: getCustomizerStyles } }}
+        >
+          <ToggleNew
+            label="Customizer Styles"
+            onText="On"
+            offText="Off"
+            defaultChecked={true}
           />
-        </VerticalStack>
-      </VerticalStack>
+        </Customizer>
+        <Customizer settings={{ theme: csCustomizerTheme }}>
+          <ToggleNew
+            label="Customizer Theme"
+            onText="On"
+            offText="Off"
+            defaultChecked={true}
+          />
+        </Customizer>
+      </>
     );
   }
-}
-
-function getClassNames() {
-  return mergeStyleSets({
-    root: {
-      fontFamily:
-        '"Segoe UI Web (West European)","Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,sans-serif'
-    },
-    header: {
-      fontSize: "1.1rem"
-    }
-  });
 }
