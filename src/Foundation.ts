@@ -10,10 +10,8 @@ import {
   IStylingProviders,
   IThemedComponent,
   IViewComponent
-// } from '@uifabric/foundation';
-} from './createComponent';
-export { IStateComponentProps } from './createComponent';
-// export { IStateComponentProps } from '@uifabric/foundation';
+} from '@uifabric/foundation';
+export { IStateComponentProps } from '@uifabric/foundation';
 import { IProcessedStyleSet, IStyleSet } from '@uifabric/styling';
 import { Customizations, CustomizableContextTypes, ICustomizations } from '@uifabric/utilities';
 
