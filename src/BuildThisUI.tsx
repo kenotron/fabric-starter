@@ -27,6 +27,7 @@ export class BuildThisUI extends React.Component<any, any> {
       <>
         <VerticalStack>
           <Text variant="default">Check out these components, yo!</Text>
+          <Text variant="default">React version is: {React.version}</Text>
         </VerticalStack>
         <ToggleOld
           label="Old"
